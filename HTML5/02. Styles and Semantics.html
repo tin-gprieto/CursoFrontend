@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Styles and Semantics - HTML5 Couse</title>
+    <style media="screen">
+      header{
+        background:grey;
+        border: 2px black solid;
+      }
+      span{
+        color: red;
+        background-color: black;
+      }
+      nav{
+        background-color: purple;
+        border: 1px red solid;
+      }
+      main{
+        float:left;
+        background-color:lightgrey;
+        border: 2px black solid;
+        width: 75%;
+        height: 400px;
+      }
+      .div1{
+        border: 2px white solid;
+        background-color: red;
+      }
+      .seccion1{
+        border: 2px lightgreen solid;
+        background-color: lightblue;
+        height: 150px;
+      }
+      .articulo1{
+        background-color:lightgreen;
+      }
+      aside{
+        float: right;
+        border: 2px black solid;
+        background-color: darkgrey;
+        width: 22.9%;
+        height: 400px;
+      }
+      footer{
+        background:grey;
+        border: 2px black solid;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <!-- <header> - Defines a header for the document or section -->
+      <header>
+        <h2> Header </h2>
+        <p> Parte superior</p>
+        <!-- <span> - Defines a section in a document -->
+        <h3>Logo<span>Span</span></h3>
+        
+        <!-- <nav> - Defines  navigation links -->
+          <nav>
+            <!-- Examples -->
+            <h3> Navegator</h3>
+            <p> Navagador entre diferentes partes de la página</p>
+            <a href="02. Styles and Semantics.html">Home</a>
+            <a href="http://google.com" target="_blank">Contacto</a>
+          </nav>
+          <br>
+        </header>
+    
+    <!-- <details> - Defines additional details that the user can view or hide -->
+    <details open>  
+    <!-- <summary> - Defines a visible heading for a <details> element -->
+      <summary> Estos son los detalles </summary>
+    <a href="http://google.com"> Google</a>
+    </details>
+
+    <!-- <main> - Specifies the main content of a document -->
+    <main>
+      <h2>Main</h2>
+      <p> Sección principal del body</p>
+      <!-- <div> - Defines a section in a document -->
+      <div class="div1"> <!-- It can be modificated by CSS-->
+        <h3>Division</h3> 
+        <p> División particular</p>
+      </div>
+      <br>
+      <!-- <section> - Defines a section in a document -->
+      <section class="seccion1">
+        <h3>Section</h3>
+        <p> Sección dentro del main</p>
+        <!-- <article> - Defines an article -->
+        <article class="articulo1">
+          <h4>Article</h4>
+          <p> Información de un articulo (...)</p>
+        </article>
+
+      </section>
+      
+       <!-- <dialog> - Defines a dialog box or window -->
+      <dialog open> Esto es una ventana de diálogo</dialog>
+    </main>
+
+
+    <!-- <aside> - Defines content aside from the page content -->
+    <aside>
+      <h3> Aside</h3>
+      <p> Sección lateral</p>
+    </aside>
+    
+    <!-- <data> - Adds a machine-readable translation of a given content -->
+    <data value="0002"> Dato 2</data>
+    
+    <!-- <footer> - Defines a footer for a document or  section -->
+    <footer>
+      <h3>Footer</h3>
+      <p> Esto es el pie de página: Va información como el contacto, autor, copyright, o link al top de página</p>
+    </footer>
+
+  </body>
+</html>

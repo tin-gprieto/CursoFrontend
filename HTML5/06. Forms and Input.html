@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms - HTML5 Course</title>
+    <style>
+      .boton1{
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h4>Inputs</h4>
+    <!-- <form> - Defines an HTML form for user input  -->
+    <form class="form" action="index.html" method="post">
+      <!-- <fieldset> - Groups related elements in a form -->
+      <fieldset>
+        
+        <!-- <legend> - Defines a caption for a <fieldset> element -->
+        <legend>Inputs box (fieldset)</legend>
+        
+        <!-- <label> - Defines a label for an <input> element -->
+        <label for="fname">Nombre</label>
+        <!-- <input> - Defines an input control -->
+        <input type="text" id="fname" >
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" >
+        <label for="url">Link</label>
+        <input type="url" name="url" id="url">
+        <label for="mail">Correo electrónico</label>
+        <input type="email" id="mail">
+        <label for="data">Data</label>
+        <input type="data" id="data">
+
+        <br><label for="boton">Botón (input)</label>
+        <input type="button" id="boton">
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" id="checkbox">
+
+        <br><label for="number">Número</label>
+        <input type="number" id="number">
+        <label for="range">Rango</label>
+        <input type="range" id="range">
+
+        <br><label for="color">Elegir color</label>
+        <input type="color" id="color">
+        <br><label for="date">Fecha</label>
+        <input type="date" id="date">
+        <label for="month">Mes</label>
+        <input type="month" id="month">
+        <br><label for="file">Archivo</label>
+        <input type="file" id="file">
+        <label for="image">Imágen</label>
+        <input type="image" id="image">
+        
+      </fieldset>
+      
+      <!-- <textarea> - Defines a multiline input control (text area)  -->
+      <br><label for="textarea">Casilla de texto (textarea)</label><br>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        
+      <!-- <button> - Defines a clickable button -->
+      <br><label for="Button">Botón (button)</label>
+      <button class="boton1" name="button" type="button" onclick="" >Botón 1</button>
+  
+      <!-- <select> - Defines a drop-down list -->
+      <br><label for="select">Lista desplegable (select / drop-down list)</label>
+      <select name="select" id="select">
+        <!-- <optgroup> - Defines a group of related options in a drop-down list -->
+        <optgroup label="Opciones">
+          <!-- <option> - Defines an option in a drop-down list -->
+          <option value="1"> Opción 1</option>
+          <option value="2"> Opción 2</option>
+          <option value="3"> Opción 3</option>
+    
+        </optgroup>
+  
+      </select>
+
+      <!-- <datalist> - Specifies a list of pre-defined options for input controls -->
+      <datalist></datalist>
+
+    </form>
+    
+    <!-- <output> - Defines the result of a calculation -->
+    <br><hr><h3>Output</h3>
+    <form oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+      <input type="text" id="a" value="0">
+      +<input type="text" id="b" value="0">
+      =<output type="number" id="x">Output</output>
+    </form>
+
+  </body>
+</html>

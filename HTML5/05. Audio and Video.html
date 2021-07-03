@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio y Video - HTML5 Course</title>
+  </head>
+  <body>
+
+    <h3> Audio </h3>
+    <!-- <audio> - Defines sound content -->
+    <audio controls autoplay loop muted >
+    
+      <!-- Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
+      <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+
+    </audio>
+
+    <br><hr><h3> Video </h3>
+    <!-- <video> - Defines a video or movie-->
+      <video controls autoplay loop muted poster="posterimage.jpg" width="400" height="223">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+    
+    <!-- <track> - Defines text tracks for media elements (<video> and <audio>) -->
+    <track kind="subtitles" src="#.srt" srclang="en">
+      
+  </body>
+</html>

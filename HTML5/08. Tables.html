@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables - HTML5 Course</title>
+    <style>
+      table {
+        border: 2px blue solid;
+        padding: 5px;
+      }
+      thead{
+        color:white;
+        background-color: black;
+        border: 2px black solid;
+      }
+      tfoot{
+        border: 2px black solid;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- <table> - Defines a table -->
+    <table width="80%">
+      
+      <!-- <caption> - Defines a table caption -->
+      <caption><h2>TABLA</h2></caption>
+
+      <!-- <thead> - Groups the header content in a table -->
+      <thead> 
+         <!-- <th> - Defines a header cell in a table -->
+          <th> Columna 1 </th>
+          <th> Columna 2 </th>
+      </thead>
+      
+      <!-- <tbody> - Groups the body content in a table -->
+      <tbody> 
+        <!-- <colgroup> - Specifies a groupd of one or more columns in a table for formatting -->
+        <colgroup>
+          <!-- <col> - Specifies column properties for each column within a <colgroup> element -->
+          <col span="1" style="background-color:purple">
+          <col span="1" style="background-color:gray">
+        </colgroup>
+
+        <!-- <tr> - Defines a row in a table -->
+        <tr> 
+
+          <!-- <td> - Defines a cell in a table -->
+          <td> Elemento 1</td>
+          <td> Elemento 2</td>
+
+        </tr>
+        <tr>
+          <td> Elemento 3</td>
+          <td> Elemento 4</td>
+        </tr>
+        <tr>
+          <td> Elemento 5</td>
+          <td> Elemento 6</td>
+        </tr>
+
+      </tbody>
+      
+      <!-- <tfoot> - Groups the footer content in a table -->
+      <tfoot>
+        <tr>
+          <td> TOTAL</td>
+          <td> xxx</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+  </body>
+</html>
